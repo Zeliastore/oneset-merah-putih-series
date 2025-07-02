@@ -3,643 +3,1074 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>SPECIAL BUNDLE 2PCS - Hijab Segi Empat Polycotton Premium</title>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <title>Flashsale.merdeka - Setelan Olahraga Premium Merah Putih</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <style>
+        :root {
+            --primary: #e30613;
+            --secondary: #ffffff;
+            --accent: #f8d400;
+            --dark: #1a1a1a;
+            --light: #f8f8f8;
+            --gray: #6c757d;
+            --success: #28a745;
+        }
+        
         * {
             margin: 0;
             padding: 0;
             box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
         }
-
+        
         body {
-            font-family: 'Poppins', sans-serif;
+            background-color: var(--light);
+            color: var(--dark);
             line-height: 1.6;
-            color: #333;
-            overflow-x: hidden;
         }
-
+        
         .container {
             max-width: 1200px;
             margin: 0 auto;
-            padding: 0 20px;
+            padding: 0 15px;
         }
-
-        /* Header Section */
-        .header {
-            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+        
+        /* Header */
+        header {
+            background: linear-gradient(135deg, var(--primary), #c00);
+            color: white;
+            padding: 15px 0;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+        
+        .header-content {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        
+        .logo {
+            font-size: 24px;
+            font-weight: 700;
+            display: flex;
+            align-items: center;
+        }
+        
+        .logo i {
+            margin-right: 10px;
+            color: var(--accent);
+        }
+        
+        .counters {
+            display: flex;
+            gap: 20px;
+        }
+        
+        .counter-item {
+            text-align: center;
+        }
+        
+        .counter-number {
+            font-size: 18px;
+            font-weight: 700;
+            color: var(--accent);
+        }
+        
+        .counter-label {
+            font-size: 12px;
+            opacity: 0.9;
+        }
+        
+        /* Hero Section */
+        .hero {
+            background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('https://down-id.img.susercontent.com/file/id-11134207-7r98p-luwyyywpa2ep8b.webp');
+            background-size: cover;
+            background-position: center;
             color: white;
             padding: 80px 0;
             text-align: center;
             position: relative;
+        }
+        
+        .hero::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            height: 20px;
+            background: linear-gradient(to bottom, transparent, var(--light));
+        }
+        
+        .hero h1 {
+            font-size: 2.5rem;
+            margin-bottom: 15px;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+        }
+        
+        .hero p {
+            font-size: 1.2rem;
+            max-width: 700px;
+            margin: 0 auto 30px;
+            text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+        }
+        
+        .price-tag {
+            background-color: rgba(255, 255, 255, 0.9);
+            color: var(--primary);
+            display: inline-block;
+            padding: 15px 30px;
+            border-radius: 50px;
+            font-weight: 700;
+            font-size: 1.5rem;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+            margin-bottom: 30px;
+        }
+        
+        .price-tag .original-price {
+            text-decoration: line-through;
+            font-size: 1rem;
+            color: var(--gray);
+            margin-right: 10px;
+        }
+        
+        .price-tag .discount-price {
+            color: var(--primary);
+        }
+        
+        .countdown {
+            background-color: rgba(0, 0, 0, 0.7);
+            padding: 15px;
+            border-radius: 10px;
+            display: inline-block;
+            margin-bottom: 30px;
+        }
+        
+        .countdown-title {
+            font-size: 1rem;
+            margin-bottom: 10px;
+        }
+        
+        .countdown-timer {
+            display: flex;
+            justify-content: center;
+            gap: 15px;
+        }
+        
+        .countdown-item {
+            text-align: center;
+        }
+        
+        .countdown-number {
+            font-size: 1.8rem;
+            font-weight: 700;
+            background-color: var(--primary);
+            color: white;
+            padding: 5px 10px;
+            border-radius: 5px;
+            min-width: 50px;
+            display: inline-block;
+        }
+        
+        .countdown-label {
+            font-size: 0.8rem;
+            opacity: 0.8;
+        }
+        
+        .cta-button {
+            background-color: var(--accent);
+            color: var(--dark);
+            border: none;
+            padding: 15px 40px;
+            font-size: 1.2rem;
+            font-weight: 700;
+            border-radius: 50px;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+        }
+        
+        .cta-button:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 6px 20px rgba(0, 0, 0, 0.3);
+            background-color: #ffea00;
+        }
+        
+        /* Product Section */
+        .product-section {
+            padding: 60px 0;
+        }
+        
+        .section-title {
+            text-align: center;
+            margin-bottom: 40px;
+            position: relative;
+        }
+        
+        .section-title h2 {
+            font-size: 2rem;
+            color: var(--primary);
+            display: inline-block;
+            padding-bottom: 10px;
+        }
+        
+        .section-title h2::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 80px;
+            height: 3px;
+            background-color: var(--primary);
+        }
+        
+        .product-tabs {
+            display: flex;
+            justify-content: center;
+            margin-bottom: 30px;
+            border-bottom: 1px solid #ddd;
+        }
+        
+        .tab-button {
+            padding: 10px 25px;
+            background: none;
+            border: none;
+            cursor: pointer;
+            font-size: 1rem;
+            font-weight: 600;
+            color: var(--gray);
+            position: relative;
+            transition: all 0.3s ease;
+        }
+        
+        .tab-button.active {
+            color: var(--primary);
+        }
+        
+        .tab-button.active::after {
+            content: '';
+            position: absolute;
+            bottom: -1px;
+            left: 0;
+            width: 100%;
+            height: 3px;
+            background-color: var(--primary);
+        }
+        
+        .tab-content {
+            display: none;
+        }
+        
+        .tab-content.active {
+            display: block;
+            animation: fadeIn 0.5s ease;
+        }
+        
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+        
+        .product-details {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 30px;
+            margin-bottom: 40px;
+        }
+        
+        .product-gallery {
+            flex: 1;
+            min-width: 300px;
+        }
+        
+        .main-image {
+            width: 100%;
+            height: 400px;
+            object-fit: contain;
+            border: 1px solid #eee;
+            border-radius: 10px;
+            margin-bottom: 15px;
+            cursor: zoom-in;
+            background-color: white;
+            padding: 20px;
+        }
+        
+        .thumbnail-container {
+            display: flex;
+            gap: 10px;
+            flex-wrap: wrap;
+        }
+        
+        .thumbnail {
+            width: 70px;
+            height: 70px;
+            object-fit: cover;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: all 0.3s ease;
+        }
+        
+        .thumbnail:hover {
+            border-color: var(--primary);
+            transform: scale(1.05);
+        }
+        
+        .product-info {
+            flex: 1;
+            min-width: 300px;
+        }
+        
+        .product-title {
+            font-size: 1.8rem;
+            margin-bottom: 15px;
+            color: var(--dark);
+        }
+        
+        .product-rating {
+            display: flex;
+            align-items: center;
+            margin-bottom: 15px;
+        }
+        
+        .stars {
+            color: var(--accent);
+            margin-right: 10px;
+        }
+        
+        .rating-count {
+            color: var(--gray);
+            font-size: 0.9rem;
+        }
+        
+        .product-price {
+            margin-bottom: 20px;
+        }
+        
+        .current-price {
+            font-size: 1.8rem;
+            font-weight: 700;
+            color: var(--primary);
+        }
+        
+        .original-price {
+            font-size: 1.2rem;
+            text-decoration: line-through;
+            color: var(--gray);
+            margin-left: 10px;
+        }
+        
+        .discount-badge {
+            background-color: var(--primary);
+            color: white;
+            padding: 3px 10px;
+            border-radius: 5px;
+            font-size: 0.9rem;
+            margin-left: 10px;
+        }
+        
+        .product-stock {
+            display: flex;
+            align-items: center;
+            margin-bottom: 20px;
+        }
+        
+        .stock-progress {
+            flex-grow: 1;
+            height: 10px;
+            background-color: #eee;
+            border-radius: 5px;
+            margin: 0 10px;
             overflow: hidden;
         }
-
-        .header::before {
+        
+        .progress-bar {
+            height: 100%;
+            background: linear-gradient(to right, var(--primary), #ff6b6b);
+            width: 80%;
+            border-radius: 5px;
+        }
+        
+        .stock-count {
+            font-weight: 600;
+            color: var(--primary);
+        }
+        
+        .product-variants {
+            margin-bottom: 25px;
+        }
+        
+        .variant-title {
+            font-weight: 600;
+            margin-bottom: 10px;
+        }
+        
+        .variant-options {
+            display: flex;
+            gap: 10px;
+            flex-wrap: wrap;
+        }
+        
+        .variant-option {
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            border: 2px solid #ddd;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            position: relative;
+        }
+        
+        .variant-option:hover {
+            border-color: var(--primary);
+        }
+        
+        .variant-option.selected {
+            border-color: var(--primary);
+        }
+        
+        .variant-option.selected::after {
+            content: '';
+            position: absolute;
+            bottom: -5px;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 10px;
+            height: 10px;
+            background-color: var(--primary);
+            border-radius: 50%;
+        }
+        
+        .variant-pink {
+            background-color: #ffc0cb;
+        }
+        
+        .variant-blue {
+            background-color: #add8e6;
+        }
+        
+        .product-features {
+            margin-bottom: 25px;
+        }
+        
+        .features-title {
+            font-weight: 600;
+            margin-bottom: 10px;
+        }
+        
+        .features-list {
+            list-style-type: none;
+        }
+        
+        .features-list li {
+            margin-bottom: 8px;
+            position: relative;
+            padding-left: 25px;
+        }
+        
+        .features-list li::before {
+            content: '\f00c';
+            font-family: 'Font Awesome 6 Free';
+            font-weight: 900;
+            position: absolute;
+            left: 0;
+            color: var(--success);
+        }
+        
+        .product-actions {
+            display: flex;
+            gap: 15px;
+            margin-top: 30px;
+        }
+        
+        .action-button {
+            flex: 1;
+            padding: 12px;
+            border-radius: 5px;
+            font-weight: 600;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 8px;
+        }
+        
+        .buy-now {
+            background-color: var(--primary);
+            color: white;
+            border: none;
+        }
+        
+        .buy-now:hover {
+            background-color: #c00;
+        }
+        
+        .add-to-cart {
+            background-color: white;
+            color: var(--primary);
+            border: 1px solid var(--primary);
+        }
+        
+        .add-to-cart:hover {
+            background-color: #fff0f0;
+        }
+        
+        /* Testimonials */
+        .testimonials {
+            background-color: white;
+            padding: 60px 0;
+        }
+        
+        .testimonial-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 30px;
+            margin-top: 40px;
+        }
+        
+        .testimonial-card {
+            background-color: var(--light);
+            border-radius: 10px;
+            padding: 25px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+            position: relative;
+        }
+        
+        .testimonial-card::before {
+            content: '\f10d';
+            font-family: 'Font Awesome 6 Free';
+            font-weight: 900;
+            position: absolute;
+            top: 20px;
+            left: 20px;
+            font-size: 2rem;
+            color: rgba(0, 0, 0, 0.05);
+            z-index: 0;
+        }
+        
+        .testimonial-content {
+            position: relative;
+            z-index: 1;
+            margin-bottom: 20px;
+        }
+        
+        .testimonial-author {
+            display: flex;
+            align-items: center;
+        }
+        
+        .author-avatar {
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            background-color: var(--primary);
+            color: white;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: 700;
+            margin-right: 15px;
+            font-size: 1.2rem;
+        }
+        
+        .author-info h4 {
+            margin-bottom: 5px;
+        }
+        
+        .author-info p {
+            font-size: 0.9rem;
+            color: var(--gray);
+        }
+        
+        .testimonial-rating {
+            color: var(--accent);
+            margin-top: 5px;
+        }
+        
+        /* Benefits Section */
+        .benefits {
+            padding: 60px 0;
+            background: linear-gradient(135deg, #f9f9f9, white);
+        }
+        
+        .benefits-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 30px;
+            margin-top: 40px;
+        }
+        
+        .benefit-card {
+            text-align: center;
+            padding: 30px 20px;
+            background-color: white;
+            border-radius: 10px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+            transition: all 0.3s ease;
+        }
+        
+        .benefit-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
+        }
+        
+        .benefit-icon {
+            font-size: 2.5rem;
+            color: var(--primary);
+            margin-bottom: 20px;
+        }
+        
+        .benefit-title {
+            font-size: 1.2rem;
+            margin-bottom: 15px;
+            color: var(--dark);
+        }
+        
+        /* Urgency Section */
+        .urgency {
+            background-color: var(--primary);
+            color: white;
+            padding: 40px 0;
+            text-align: center;
+        }
+        
+        .urgency-content {
+            max-width: 800px;
+            margin: 0 auto;
+        }
+        
+        .urgency-title {
+            font-size: 1.8rem;
+            margin-bottom: 20px;
+        }
+        
+        .urgency-message {
+            font-size: 1.1rem;
+            margin-bottom: 30px;
+        }
+        
+        /* CTA Section */
+        .cta-section {
+            padding: 80px 0;
+            background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('https://down-id.img.susercontent.com/file/id-11134207-7r98p-luwyyywpa2ep8b.webp');
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+            color: white;
+            text-align: center;
+            position: relative;
+        }
+        
+        .cta-section::after {
             content: '';
             position: absolute;
             top: 0;
             left: 0;
-            right: 0;
-            bottom: 0;
-            background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><defs><pattern id="grain" width="100" height="100" patternUnits="userSpaceOnUse"><circle cx="50" cy="50" r="1" fill="white" opacity="0.1"/></pattern></defs><rect width="100" height="100" fill="url(%23grain)"/></svg>');
-            animation: float 20s ease-in-out infinite;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(227, 6, 19, 0.6);
         }
-
-        @keyframes float {
-            0%, 100% { transform: translateY(0px); }
-            50% { transform: translateY(-20px); }
-        }
-
-        .header-content {
+        
+        .cta-content {
             position: relative;
-            z-index: 2;
+            z-index: 1;
         }
-
-        .badge {
-            display: inline-block;
-            background: rgba(255, 255, 255, 0.2);
-            padding: 8px 20px;
-            border-radius: 50px;
+        
+        .cta-title {
+            font-size: 2.2rem;
             margin-bottom: 20px;
-            backdrop-filter: blur(10px);
-            border: 1px solid rgba(255, 255, 255, 0.3);
-            animation: pulse 2s infinite;
         }
-
+        
+        .cta-subtitle {
+            font-size: 1.2rem;
+            max-width: 700px;
+            margin: 0 auto 40px;
+        }
+        
+        /* Footer */
+        footer {
+            background-color: var(--dark);
+            color: white;
+            padding: 40px 0 20px;
+        }
+        
+        .footer-content {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 30px;
+            margin-bottom: 30px;
+        }
+        
+        .footer-column h3 {
+            font-size: 1.2rem;
+            margin-bottom: 20px;
+            position: relative;
+            padding-bottom: 10px;
+        }
+        
+        .footer-column h3::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 40px;
+            height: 2px;
+            background-color: var(--primary);
+        }
+        
+        .footer-links {
+            list-style-type: none;
+        }
+        
+        .footer-links li {
+            margin-bottom: 10px;
+        }
+        
+        .footer-links a {
+            color: #ccc;
+            text-decoration: none;
+            transition: all 0.3s ease;
+        }
+        
+        .footer-links a:hover {
+            color: white;
+            padding-left: 5px;
+        }
+        
+        .footer-bottom {
+            text-align: center;
+            padding-top: 20px;
+            border-top: 1px solid #333;
+            font-size: 0.9rem;
+            color: #999;
+        }
+        
+        /* Modal */
+        .modal {
+            display: none;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.8);
+            z-index: 2000;
+            justify-content: center;
+            align-items: center;
+        }
+        
+        .modal-content {
+            max-width: 90%;
+            max-height: 90%;
+            position: relative;
+        }
+        
+        .modal-image {
+            max-width: 100%;
+            max-height: 90vh;
+            display: block;
+            margin: 0 auto;
+        }
+        
+        .close-modal {
+            position: absolute;
+            top: -40px;
+            right: 0;
+            color: white;
+            font-size: 2rem;
+            cursor: pointer;
+        }
+        
+        /* Responsive */
+        @media (max-width: 768px) {
+            .header-content {
+                flex-direction: column;
+                gap: 15px;
+            }
+            
+            .counters {
+                width: 100%;
+                justify-content: space-around;
+            }
+            
+            .hero h1 {
+                font-size: 2rem;
+            }
+            
+            .hero p {
+                font-size: 1rem;
+            }
+            
+            .price-tag {
+                font-size: 1.2rem;
+                padding: 10px 20px;
+            }
+            
+            .product-details {
+                flex-direction: column;
+            }
+            
+            .product-actions {
+                flex-direction: column;
+            }
+            
+            .section-title h2 {
+                font-size: 1.5rem;
+            }
+            
+            .cta-title {
+                font-size: 1.8rem;
+            }
+        }
+        
+        /* Animation */
         @keyframes pulse {
             0% { transform: scale(1); }
             50% { transform: scale(1.05); }
             100% { transform: scale(1); }
         }
-
-        .main-title {
-            font-size: 3.5rem;
-            font-weight: 800;
-            margin-bottom: 20px;
-            background: linear-gradient(45deg, #fff, #f0f0f0);
-            -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent;
-            animation: slideInUp 1s ease-out;
+        
+        .pulse {
+            animation: pulse 2s infinite;
         }
-
-        .subtitle {
-            font-size: 1.3rem;
-            margin-bottom: 30px;
-            opacity: 0.9;
-            animation: slideInUp 1s ease-out 0.2s both;
-        }
-
-        @keyframes slideInUp {
-            from {
-                opacity: 0;
-                transform: translateY(30px);
-            }
-            to {
-                opacity: 1;
-                transform: translateY(0);
-            }
-        }
-
-        /* Stats Section */
-        .stats {
-            background: #f8f9fa;
-            padding: 60px 0;
-        }
-
-        .stats-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-            gap: 30px;
-            text-align: center;
-        }
-
-        .stat-item {
-            background: white;
-            padding: 40px 20px;
-            border-radius: 20px;
-            box-shadow: 0 10px 30px rgba(0,0,0,0.1);
-            transition: transform 0.3s ease;
-        }
-
-        .stat-item:hover {
-            transform: translateY(-10px);
-        }
-
-        .stat-number {
-            font-size: 3rem;
-            font-weight: 800;
-            color: #667eea;
-            margin-bottom: 10px;
-        }
-
-        .stat-label {
-            color: #666;
-            font-weight: 500;
-        }
-
-        /* Product Section */
-        .product-section {
-            padding: 80px 0;
-            background: white;
-        }
-
-        .product-grid {
-            display: grid;
-            grid-template-columns: 1fr 1fr;
-            gap: 60px;
-            align-items: center;
-        }
-
-        .product-images {
-            position: relative;
-        }
-
-        .main-image {
-            width: 100%;
-            border-radius: 20px;
-            box-shadow: 0 20px 50px rgba(0,0,0,0.15);
-            transition: transform 0.3s ease;
-        }
-
-        .main-image:hover {
-            transform: scale(1.05);
-        }
-
-        .thumbnail-grid {
-            display: grid;
-            grid-template-columns: repeat(3, 1fr);
-            gap: 10px;
-            margin-top: 20px;
-        }
-
-        .thumbnail {
-            width: 100%;
-            height: 80px;
-            object-fit: cover;
-            border-radius: 10px;
-            cursor: pointer;
-            transition: all 0.3s ease;
-            border: 2px solid transparent;
-        }
-
-        .thumbnail:hover, .thumbnail.active {
-            border-color: #667eea;
-            transform: scale(1.1);
-        }
-
-        .product-info h2 {
-            font-size: 2.5rem;
-            margin-bottom: 20px;
-            color: #333;
-        }
-
-        .product-description {
-            font-size: 1.1rem;
-            color: #666;
-            margin-bottom: 30px;
-            line-height: 1.8;
-        }
-
-        .features-list {
-            list-style: none;
-            margin-bottom: 30px;
-        }
-
-        .features-list li {
-            padding: 10px 0;
-            display: flex;
-            align-items: center;
-            color: #555;
-        }
-
-        .features-list li i {
-            color: #667eea;
-            margin-right: 15px;
-            font-size: 1.2rem;
-        }
-
-        /* Price Banner */
-        .price-banner {
-            background: linear-gradient(135deg, #ff6b6b, #ee5a24);
+        
+        /* Floating WhatsApp */
+        .whatsapp-float {
+            position: fixed;
+            bottom: 30px;
+            right: 30px;
+            background-color: #25D366;
             color: white;
-            padding: 60px 0;
-            text-align: center;
-            position: relative;
-            overflow: hidden;
-        }
-
-        .price-banner::before {
-            content: '';
-            position: absolute;
-            top: -50%;
-            left: -50%;
-            width: 200%;
-            height: 200%;
-            background: linear-gradient(45deg, transparent, rgba(255,255,255,0.1), transparent);
-            animation: shine 3s infinite;
-        }
-
-        @keyframes shine {
-            0% { transform: translateX(-100%) translateY(-100%) rotate(45deg); }
-            100% { transform: translateX(100%) translateY(100%) rotate(45deg); }
-        }
-
-        .price-content {
-            position: relative;
-            z-index: 2;
-        }
-
-        .price-old {
-            font-size: 1.5rem;
-            text-decoration: line-through;
-            opacity: 0.8;
-            margin-bottom: 10px;
-        }
-
-        .price-new {
-            font-size: 4rem;
-            font-weight: 800;
-            margin-bottom: 20px;
-            text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
-        }
-
-        .savings {
-            font-size: 1.3rem;
-            background: rgba(255,255,255,0.2);
-            padding: 10px 20px;
-            border-radius: 50px;
-            display: inline-block;
-            margin-bottom: 30px;
-        }
-
-        /* Countdown Timer */
-        .countdown-section {
-            background: #2c3e50;
-            color: white;
-            padding: 60px 0;
-            text-align: center;
-        }
-
-        .countdown-timer {
-            display: flex;
-            justify-content: center;
-            gap: 30px;
-            margin-top: 30px;
-        }
-
-        .time-unit {
-            background: rgba(255,255,255,0.1);
-            padding: 20px;
-            border-radius: 15px;
-            min-width: 100px;
-            backdrop-filter: blur(10px);
-        }
-
-        .time-value {
-            font-size: 2.5rem;
-            font-weight: 800;
-            display: block;
-        }
-
-        .time-label {
-            font-size: 0.9rem;
-            opacity: 0.8;
-        }
-
-        /* Testimonials */
-        .testimonials {
-            padding: 80px 0;
-            background: #f8f9fa;
-        }
-
-        .testimonials h2 {
-            text-align: center;
-            font-size: 2.5rem;
-            margin-bottom: 60px;
-            color: #333;
-        }
-
-        .testimonials-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-            gap: 30px;
-        }
-
-        .testimonial {
-            background: white;
-            padding: 30px;
-            border-radius: 20px;
-            box-shadow: 0 10px 30px rgba(0,0,0,0.1);
-            transition: transform 0.3s ease;
-        }
-
-        .testimonial:hover {
-            transform: translateY(-5px);
-        }
-
-        .stars {
-            color: #f39c12;
-            margin-bottom: 15px;
-            font-size: 1.2rem;
-        }
-
-        .testimonial-text {
-            font-style: italic;
-            margin-bottom: 15px;
-            color: #555;
-        }
-
-        .testimonial-author {
-            font-weight: 600;
-            color: #333;
-        }
-
-        /* CTA Section */
-        .cta-section {
-            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-            color: white;
-            padding: 80px 0;
-            text-align: center;
-        }
-
-        .cta-button {
-            display: inline-block;
-            background: linear-gradient(45deg, #ff6b6b, #ee5a24);
-            color: white;
-            padding: 20px 50px;
-            border-radius: 50px;
-            text-decoration: none;
-            font-size: 1.3rem;
-            font-weight: 700;
-            box-shadow: 0 10px 30px rgba(0,0,0,0.3);
-            transition: all 0.3s ease;
-            text-transform: uppercase;
-            letter-spacing: 1px;
-        }
-
-        .cta-button:hover {
-            transform: translateY(-5px);
-            box-shadow: 0 20px 40px rgba(0,0,0,0.4);
-        }
-
-        /* How to Use */
-        .how-to-use {
-            padding: 80px 0;
-            background: white;
-        }
-
-        .how-to-use h2 {
-            text-align: center;
-            font-size: 2.5rem;
-            margin-bottom: 60px;
-            color: #333;
-        }
-
-        .steps-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-            gap: 30px;
-        }
-
-        .step {
-            text-align: center;
-            padding: 30px;
-        }
-
-        .step-number {
-            width: 80px;
-            height: 80px;
-            background: linear-gradient(135deg, #667eea, #764ba2);
-            color: white;
+            width: 60px;
+            height: 60px;
             border-radius: 50%;
             display: flex;
-            align-items: center;
             justify-content: center;
-            font-size: 2rem;
-            font-weight: 800;
-            margin: 0 auto 20px;
+            align-items: center;
+            font-size: 1.5rem;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+            z-index: 1000;
+            transition: all 0.3s ease;
         }
-
-        .step h3 {
-            margin-bottom: 15px;
-            color: #333;
-        }
-
-        .step p {
-            color: #666;
-        }
-
-        /* Mobile Responsive */
-        @media (max-width: 768px) {
-            .main-title {
-                font-size: 2.5rem;
-            }
-
-            .product-grid {
-                grid-template-columns: 1fr;
-                gap: 40px;
-            }
-
-            .countdown-timer {
-                flex-wrap: wrap;
-                gap: 15px;
-            }
-
-            .time-unit {
-                min-width: 80px;
-                padding: 15px;
-            }
-
-            .time-value {
-                font-size: 2rem;
-            }
-
-            .price-new {
-                font-size: 3rem;
-            }
-
-            .stats-grid {
-                grid-template-columns: repeat(2, 1fr);
-            }
-        }
-
-        @media (max-width: 480px) {
-            .container {
-                padding: 0 15px;
-            }
-
-            .main-title {
-                font-size: 2rem;
-            }
-
-            .stats-grid {
-                grid-template-columns: 1fr;
-            }
-
-            .testimonials-grid {
-                grid-template-columns: 1fr;
-            }
-
-            .steps-grid {
-                grid-template-columns: 1fr;
-            }
-        }
-
-        /* Floating Elements */
-        .floating-element {
-            position: absolute;
-            animation: float 6s ease-in-out infinite;
-        }
-
-        .floating-element:nth-child(1) {
-            top: 10%;
-            left: 10%;
-            animation-delay: 0s;
-        }
-
-        .floating-element:nth-child(2) {
-            top: 20%;
-            right: 10%;
-            animation-delay: 2s;
-        }
-
-        .floating-element:nth-child(3) {
-            bottom: 30%;
-            left: 5%;
-            animation-delay: 4s;
+        
+        .whatsapp-float:hover {
+            transform: scale(1.1);
+            box-shadow: 0 6px 16px rgba(0, 0, 0, 0.3);
         }
     </style>
 </head>
 <body>
-    <!-- Header Section -->
-    <section class="header">
-        <div class="container">
-            <div class="header-content">
-                <div class="badge">
-                    <i class="fas fa-fire"></i> PROMO TERBATAS
+    <!-- Header -->
+    <header>
+        <div class="container header-content">
+            <div class="logo">
+                <i class="fas fa-bolt"></i>
+                Flashsale.merdeka
+            </div>
+            <div class="counters">
+                <div class="counter-item">
+                    <div class="counter-number" id="view-counter">1,254</div>
+                    <div class="counter-label">Pengunjung</div>
                 </div>
-                <h1 class="main-title">Spesial Bundle Beli 1 Gratis 1</h1>
-                <p class="subtitle">Hijab Segi Empat Polycotton Premium 110x110cm - Kualitas Terbaik untuk Muslimah Modern</p>
+                <div class="counter-item">
+                    <div class="counter-number" id="sold-counter">869</div>
+                    <div class="counter-label">Terjual</div>
+                </div>
             </div>
         </div>
-    </section>
+    </header>
 
-    <!-- Stats Section -->
-    <section class="stats">
+    <!-- Hero Section -->
+    <section class="hero">
         <div class="container">
-            <div class="stats-grid">
-                <div class="stat-item">
-                    <div class="stat-number" id="viewers">1,247</div>
-                    <div class="stat-label">Sedang Melihat</div>
-                </div>
-                <div class="stat-item">
-                    <div class="stat-number" id="stock">47</div>
-                    <div class="stat-label">Stok Tersisa</div>
-                </div>
-                <div class="stat-item">
-                    <div class="stat-number">4.9</div>
-                    <div class="stat-label">Rating Bintang</div>
-                </div>
-                <div class="stat-item">
-                    <div class="stat-number">2,834</div>
-                    <div class="stat-label">Terjual</div>
+            <h1>One Set Merah Putih Premium</h1>
+            <p>Setelan olahraga berkualitas tinggi dengan bahan nyaman dan desain stylish untuk penampilan percaya diri</p>
+            
+            <div class="price-tag">
+                <span class="original-price">Rp 399.000</span>
+                <span class="discount-price">Rp 199.654</span>
+            </div>
+            
+            <div class="countdown">
+                <div class="countdown-title">PROMO BERAKHIR DALAM:</div>
+                <div class="countdown-timer">
+                    <div class="countdown-item">
+                        <div class="countdown-number" id="hours">00</div>
+                        <div class="countdown-label">Jam</div>
+                    </div>
+                    <div class="countdown-item">
+                        <div class="countdown-number" id="minutes">00</div>
+                        <div class="countdown-label">Menit</div>
+                    </div>
+                    <div class="countdown-item">
+                        <div class="countdown-number" id="seconds">00</div>
+                        <div class="countdown-label">Detik</div>
+                    </div>
                 </div>
             </div>
+            
+            <button class="cta-button pulse">PESAN SEKARANG!</button>
         </div>
     </section>
 
     <!-- Product Section -->
     <section class="product-section">
         <div class="container">
-            <div class="product-grid">
-                <div class="product-images">
-                    <img src="https://cdn.orderonline.id/uploads/images_7683611748789446554.png" alt="Hijab Polycotton Bundle" class="main-image" id="mainImage">
-                    <div class="thumbnail-grid">
-                        <img src="https://cdn.orderonline.id/uploads/images_7683611748789446554.png" alt="Thumbnail 1" class="thumbnail active" onclick="changeImage(this.src)">
-                        <img src="https://down-id.img.susercontent.com/file/id-11134207-7rbk2-m70i0j5myur87c.webp" alt="Thumbnail 2" class="thumbnail" onclick="changeImage(this.src)">
-                        <img src="https://down-id.img.susercontent.com/file/id-11134207-7rbkd-m70i0j5mxg6sca.webp" alt="Thumbnail 3" class="thumbnail" onclick="changeImage(this.src)">
+            <div class="section-title">
+                <h2>PRODUK KAMI</h2>
+            </div>
+            
+            <div class="product-tabs">
+                <button class="tab-button active" data-tab="tab1">V1 Series</button>
+                <button class="tab-button" data-tab="tab2">V2 Series</button>
+            </div>
+            
+            <!-- Tab 1 Content -->
+            <div class="tab-content active" id="tab1">
+                <div class="product-details">
+                    <div class="product-gallery">
+                        <img src="https://down-id.img.susercontent.com/file/id-11134207-7r98z-luwyyywp8nu941.webp" alt="One Set Merah Putih V1" class="main-image" id="main-image-1">
+                        <div class="thumbnail-container">
+                            <img src="https://down-id.img.susercontent.com/file/id-11134207-7r98z-luwyyywp8nu941.webp" alt="Thumbnail 1" class="thumbnail" data-main="https://down-id.img.susercontent.com/file/id-11134207-7r98z-luwyyywp8nu941.webp">
+                            <img src="https://down-id.img.susercontent.com/file/id-11134207-7r991-luwyyywpbgz52e.webp" alt="Thumbnail 2" class="thumbnail" data-main="https://down-id.img.susercontent.com/file/id-11134207-7r991-luwyyywpbgz52e.webp">
+                            <img src="https://down-id.img.susercontent.com/file/id-11134207-7r98x-luwyyywpcvjl22.webp" alt="Thumbnail 3" class="thumbnail" data-main="https://down-id.img.susercontent.com/file/id-11134207-7r98x-luwyyywpcvjl22.webp">
+                            <img src="https://down-id.img.susercontent.com/file/id-11134207-7r98q-luwyyywpea4190.webp" alt="Thumbnail 4" class="thumbnail" data-main="https://down-id.img.susercontent.com/file/id-11134207-7r98q-luwyyywpea4190.webp">
+                            <img src="https://down-id.img.susercontent.com/file/id-11134207-7r992-luwyyywpfooh5f.webp" alt="Thumbnail 5" class="thumbnail" data-main="https://down-id.img.susercontent.com/file/id-11134207-7r992-luwyyywpfooh5f.webp">
+                        </div>
+                    </div>
+                    
+                    <div class="product-info">
+                        <h1 class="product-title">One Set Merah Putih V1</h1>
+                        
+                        <div class="product-rating">
+                            <div class="stars">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star-half-alt"></i>
+                            </div>
+                            <span class="rating-count">(428 ulasan)</span>
+                        </div>
+                        
+                        <div class="product-price">
+                            <span class="current-price">Rp 199.654</span>
+                            <span class="original-price">Rp 399.000</span>
+                            <span class="discount-badge">50% OFF</span>
+                        </div>
+                        
+                        <div class="product-stock">
+                            <span>Stok Tersisa:</span>
+                            <div class="stock-progress">
+                                <div class="progress-bar" style="width: 30%;"></div>
+                            </div>
+                            <span class="stock-count">40 pcs</span>
+                        </div>
+                        
+                        <div class="product-variants">
+                            <div class="variant-title">Warna Tersedia:</div>
+                            <div class="variant-options">
+                                <div class="variant-option variant-pink selected" data-color="pink"></div>
+                                <div class="variant-option variant-blue" data-color="blue"></div>
+                            </div>
+                        </div>
+                        
+                        <div class="product-features">
+                            <div class="features-title">Fitur Utama:</div>
+                            <ul class="features-list">
+                                <li>Bahan katun berkualitas tinggi dengan elastisitas optimal</li>
+                                <li>Desain stylish dengan kombinasi merah putih yang elegan</li>
+                                <li>Nyaman dipakai untuk berbagai aktivitas olahraga</li>
+                                <li>Tahan lama dan tidak mudah luntur meski dicuci berkali-kali</li>
+                                <li>Tersedia dalam berbagai ukuran untuk kenyamanan maksimal</li>
+                            </ul>
+                        </div>
+                        
+                        <div class="product-actions">
+                            <button class="action-button buy-now" id="buy-now-1">
+                                <i class="fas fa-shopping-cart"></i> Beli Sekarang
+                            </button>
+                            <button class="action-button add-to-cart">
+                                <i class="fas fa-heart"></i> Tambah ke Wishlist
+                            </button>
+                        </div>
                     </div>
                 </div>
-                <div class="product-info">
-                    <h2>Hijab Polycotton Premium Bundle</h2>
-                    <p class="product-description">
-                        Dapatkan 2 pcs hijab segi empat polycotton premium dengan kualitas terbaik! Bahan yang lembut, tidak mudah kusut, dan nyaman digunakan sepanjang hari. Cocok untuk berbagai acara formal maupun casual.
-                    </p>
-                    <ul class="features-list">
-                        <li><i class="fas fa-check-circle"></i> Bahan Polycotton Premium (110x110cm)</li>
-                        <li><i class="fas fa-check-circle"></i> Tidak Mudah Kusut & Licin</li>
-                        <li><i class="fas fa-check-circle"></i> Beli 1 Gratis 1 (Total 2 Pcs)</li>
-                        <li><i class="fas fa-check-circle"></i> Tersedia Berbagai Warna Cantik</li>
-                        <li><i class="fas fa-check-circle"></i> Cocok untuk Segala Acara</li>
-                        <li><i class="fas fa-check-circle"></i> Mudah Dirawat & Tahan Lama</li>
-                    </ul>
-                </div>
             </div>
-        </div>
-    </section>
-
-    <!-- Price Banner -->
-    <section class="price-banner">
-        <div class="container">
-            <div class="price-content">
-                <div class="price-old">Harga Normal: Rp 223.498</div>
-                <div class="price-new">Rp 149.999</div>
-                <div class="savings">Hemat 33% - Beli 1 Gratis 1!</div>
-                <p style="font-size: 1.2rem; margin-bottom: 30px;">
-                    <i class="fas fa-shipping-fast"></i> GRATIS ONGKIR Se-Indonesia
-                </p>
-            </div>
-        </div>
-    </section>
-
-    <!-- Countdown Timer -->
-    <section class="countdown-section">
-        <div class="container">
-            <h2 style="margin-bottom: 20px;">Promo Berakhir Dalam:</h2>
-            <p style="font-size: 1.2rem; margin-bottom: 30px;">Jangan sampai kehabisan! Stok terbatas untuk promo ini.</p>
-            <div class="countdown-timer">
-                <div class="time-unit">
-                    <span class="time-value" id="hours">07</span>
-                    <span class="time-label">Jam</span>
-                </div>
-                <div class="time-unit">
-                    <span class="time-value" id="minutes">23</span>
-                    <span class="time-label">Menit</span>
-                </div>
-                <div class="time-unit">
-                    <span class="time-value" id="seconds">45</span>
-                    <span class="time-label">Detik</span>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- How to Use -->
-    <section class="how-to-use">
-        <div class="container">
-            <h2>Cara Penggunaan yang Mudah</h2>
-            <div class="steps-grid">
-                <div class="step">
-                    <div class="step-number">1</div>
-                    <h3>Pilih Gaya</h3>
-                    <p>Tentukan gaya hijab yang ingin Anda buat sesuai dengan outfit dan acara</p>
-                </div>
-                <div class="step">
-                    <div class="step-number">2</div>
-                    <h3>Lipat & Bentuk</h3>
-                    <p>Lipat hijab sesuai bentuk wajah Anda untuk hasil yang maksimal dan nyaman</p>
-                </div>
-                <div class="step">
-                    <div class="step-number">3</div>
-                    <h3>Sematkan</h3>
-                    <p>Gunakan jarum pentul atau peniti untuk menyematkan hijab dengan rapi</p>
-                </div>
-                <div class="step">
-                    <div class="step-number">4</div>
-                    <h3>Siap Digunakan</h3>
-                    <p>Hijab siap digunakan sepanjang hari dengan kenyamanan maksimal</p>
+            
+            <!-- Tab 2 Content -->
+            <div class="tab-content" id="tab2">
+                <div class="product-details">
+                    <div class="product-gallery">
+                        <img src="https://down-id.img.susercontent.com/file/sg-11134201-7reol-m2jbfem1hsc636.webp" alt="One Set Merah Putih V2" class="main-image" id="main-image-2">
+                        <div class="thumbnail-container">
+                            <img src="https://down-id.img.susercontent.com/file/sg-11134201-7reol-m2jbfem1hsc636.webp" alt="Thumbnail 1" class="thumbnail" data-main="https://down-id.img.susercontent.com/file/sg-11134201-7reol-m2jbfem1hsc636.webp">
+                            <img src="https://down-id.img.susercontent.com/file/sg-11134201-7req6-m2jbfer1ahfk0c.webp" alt="Thumbnail 2" class="thumbnail" data-main="https://down-id.img.susercontent.com/file/sg-11134201-7req6-m2jbfer1ahfk0c.webp">
+                            <img src="https://down-id.img.susercontent.com/file/sg-11134201-7req8-m2jbfew1367v1b.webp" alt="Thumbnail 3" class="thumbnail" data-main="https://down-id.img.susercontent.com/file/sg-11134201-7req8-m2jbfew1367v1b.webp">
+                        </div>
+                    </div>
+                    
+                    <div class="product-info">
+                        <h1 class="product-title">One Set Merah Putih V2</h1>
+                        
+                        <div class="product-rating">
+                            <div class="stars">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="far fa-star"></i>
+                            </div>
+                            <span class="rating-count">(312 ulasan)</span>
+                        </div>
+                        
+                        <div class="product-price">
+                            <span class="current-price">Rp 199.654</span>
+                            <span class="original-price">Rp 399.000</span>
+                            <span class="discount-badge">50% OFF</span>
+                        </div>
+                        
+                        <div class="product-stock">
+                            <span>Stok Tersisa:</span>
+                            <div class="stock-progress">
+                                <div class="progress-bar" style="width: 25%;"></div>
+                            </div>
+                            <span class="stock-count">35 pcs</span>
+                        </div>
+                        
+                        <div class="product-variants">
+                            <div class="variant-title">Warna Tersedia:</div>
+                            <div class="variant-options">
+                                <div class="variant-option variant-pink selected" data-color="pink"></div>
+                                <div class="variant-option variant-blue" data-color="blue"></div>
+                            </div>
+                        </div>
+                        
+                        <div class="product-features">
+                            <div class="features-title">Fitur Utama:</div>
+                            <ul class="features-list">
+                                <li>Desain lebih modern dengan potongan yang lebih stylish</li>
+                                <li>Bahan lebih ringan dan cepat kering untuk kenyamanan maksimal</li>
+                                <li>Jahitan presisi untuk ketahanan lebih lama</li>
+                                <li>Sirkulasi udara optimal dengan teknologi breathable fabric</li>
+                                <li>Pilihan warna yang cerah dan tidak mudah pudar</li>
+                            </ul>
+                        </div>
+                        
+                        <div class="product-actions">
+                            <button class="action-button buy-now" id="buy-now-2">
+                                <i class="fas fa-shopping-cart"></i> Beli Sekarang
+                            </button>
+                            <button class="action-button add-to-cart">
+                                <i class="fas fa-heart"></i> Tambah ke Wishlist
+                            </button>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
@@ -648,162 +1079,364 @@
     <!-- Testimonials -->
     <section class="testimonials">
         <div class="container">
-            <h2>Apa Kata Mereka?</h2>
-            <div class="testimonials-grid">
-                <div class="testimonial">
-                    <div class="stars">
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
+            <div class="section-title">
+                <h2>TESTIMONI PELANGGAN</h2>
+            </div>
+            
+            <div class="testimonial-grid">
+                <div class="testimonial-card">
+                    <div class="testimonial-content">
+                        "Produknya sangat nyaman dipakai untuk olahraga. Bahannya adem dan tidak gerah meski dipakai berlari. Desainnya juga stylish bikin percaya diri!"
                     </div>
-                    <p class="testimonial-text">"Hijabnya bagus banget! Bahannya lembut dan tidak mudah kusut. Dapat 2 pcs dengan harga segini worth it banget!"</p>
-                    <p class="testimonial-author">- Sari, Jakarta</p>
+                    <div class="testimonial-author">
+                        <div class="author-avatar">A</div>
+                        <div class="author-info">
+                            <h4>Anita S.</h4>
+                            <p>Pembeli V1 Series</p>
+                            <div class="testimonial-rating">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-                <div class="testimonial">
-                    <div class="stars">
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
+                
+                <div class="testimonial-card">
+                    <div class="testimonial-content">
+                        "Kualitas produk melebihi ekspektasi. Jahitannya rapi dan bahannya premium. Pengiriman cepat dan packing aman. Sangat recommended!"
                     </div>
-                    <p class="testimonial-text">"Kualitas premium dengan harga terjangkau. Cocok untuk ke kantor dan acara formal. Sudah order berkali-kali!"</p>
-                    <p class="testimonial-author">- Rina, Bandung</p>
+                    <div class="testimonial-author">
+                        <div class="author-avatar">B</div>
+                        <div class="author-info">
+                            <h4>Budi W.</h4>
+                            <p>Pembeli V2 Series</p>
+                            <div class="testimonial-rating">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star-half-alt"></i>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-                <div class="testimonial">
-                    <div class="stars">
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
+                
+                <div class="testimonial-card">
+                    <div class="testimonial-content">
+                        "Sudah beli 3 kali di toko ini karena kualitasnya konsisten. Desain V2 lebih modern dan bahannya lebih ringan. Puas banget dengan pelayanannya!"
                     </div>
-                    <p class="testimonial-text">"Pengiriman cepat, packaging rapi. Hijabnya sesuai ekspektasi, bahan polycotton memang beda dari yang biasa!"</p>
-                    <p class="testimonial-author">- Maya, Surabaya</p>
+                    <div class="testimonial-author">
+                        <div class="author-avatar">C</div>
+                        <div class="author-info">
+                            <h4>Citra L.</h4>
+                            <p>Pelanggan Setia</p>
+                            <div class="testimonial-rating">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-                <div class="testimonial">
-                    <div class="stars">
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
+                
+                <div class="testimonial-card">
+                    <div class="testimonial-content">
+                        "Awalnya ragu karena harganya murah, tapi setelah pakai ternyata kualitas premium. Nyaman dipakai senam dan tidak gerah. Bakal beli lagi warna lain!"
                     </div>
-                    <p class="testimonial-text">"Terima kasih! Hijabnya cantik dan nyaman dipakai. Warnanya juga sesuai dengan foto. Highly recommended!"</p>
-                    <p class="testimonial-author">- Dewi, Yogyakarta</p>
+                    <div class="testimonial-author">
+                        <div class="author-avatar">D</div>
+                        <div class="author-info">
+                            <h4>Dian K.</h4>
+                            <p>Pembeli V1 Series</p>
+                            <div class="testimonial-rating">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="far fa-star"></i>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- CTA Section -->
-    <section class="cta-section">
+    <!-- Benefits Section -->
+    <section class="benefits">
         <div class="container">
-            <h2 style="font-size: 2.5rem; margin-bottom: 20px;">Jangan Sampai Kehabisan!</h2>
-            <p style="font-size: 1.3rem; margin-bottom: 40px;">Promo terbatas hanya untuk 100 pembeli pertama hari ini!</p>
-            <a href="https://nava.orderonline.id/checkout-polycotton-rectangle-hijab" class="cta-button" target="_blank">
-                <i class="fas fa-shopping-cart"></i> AMBIL PROMO SEKARANG JUGA
-            </a>
-            <p style="margin-top: 30px; font-size: 1.1rem;">
-                <i class="fas fa-shield-alt"></i> Garansi 100% Uang Kembali Jika Tidak Puas
-            </p>
+            <div class="section-title">
+                <h2>KENAPA PILIH PRODUK KAMI?</h2>
+            </div>
+            
+            <div class="benefits-grid">
+                <div class="benefit-card">
+                    <div class="benefit-icon">
+                        <i class="fas fa-medal"></i>
+                    </div>
+                    <h3 class="benefit-title">Kualitas Premium</h3>
+                    <p>Bahan berkualitas tinggi dengan jahitan presisi untuk ketahanan maksimal dan kenyamanan optimal.</p>
+                </div>
+                
+                <div class="benefit-card">
+                    <div class="benefit-icon">
+                        <i class="fas fa-truck"></i>
+                    </div>
+                    <h3 class="benefit-title">Pengiriman Cepat</h3>
+                    <p>Proses pengiriman super cepat dengan packing aman. Pesan sebelum jam 12, dikirim hari itu juga!</p>
+                </div>
+                
+                <div class="benefit-card">
+                    <div class="benefit-icon">
+                        <i class="fas fa-shield-alt"></i>
+                    </div>
+                    <h3 class="benefit-title">Garansi Kepuasan</h3>
+                    <p>Garansi 100% uang kembali jika produk tidak sesuai deskripsi atau ada cacat produksi.</p>
+                </div>
+                
+                <div class="benefit-card">
+                    <div class="benefit-icon">
+                        <i class="fas fa-headset"></i>
+                    </div>
+                    <h3 class="benefit-title">Layanan 24/7</h3>
+                    <p>Tim customer service siap membantu Anda kapan saja melalui WhatsApp, email, atau telepon.</p>
+                </div>
+            </div>
         </div>
     </section>
 
+    <!-- Urgency Section -->
+    <section class="urgency">
+        <div class="container urgency-content">
+            <h2 class="urgency-title">PROMO TERBATAS! JANGAN SAMPAI KEHABISAN</h2>
+            <p class="urgency-message">Harga spesial ini hanya berlaku untuk 100 pembeli pertama hari ini. Stok sangat terbatas dan akan kembali ke harga normal setelah promo berakhir!</p>
+            <button class="cta-button pulse">PESAN SEKARANG SEBELUM KEHABISAN</button>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="cta-section">
+        <div class="container cta-content">
+            <h2 class="cta-title">ONE SET MERAH PUTIH PREMIUM</h2>
+            <p class="cta-subtitle">Dapatkan setelan olahraga berkualitas tinggi dengan harga spesial hari ini. Jangan lewatkan kesempatan ini sebelum promo berakhir!</p>
+            <button class="cta-button pulse">PESAN SEKARANG</button>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <!-- WhatsApp Float -->
+  <!-- Image Modal -->
+    <div class="modal" id="image-modal">
+        <div class="modal-content">
+            <span class="close-modal">&times;</span>
+            <img src="" alt="Product Image" class="modal-image" id="modal-image">
+        </div>
+    </div>
+
+    <!-- Order Form (hidden by default) -->
+    <div id="order-form-container" style="display: none;">
+        <!-- OrderOnline Embed Code - v8.0.4 -->
+        <div class="ooef">
+            <form class="orderonline-embed-form" data-username="nava" data-product-slug="one-set-merah-putih" data-product-id="6865a0b5fa1312201a0d1033" id="oo-embed-form-one-set-merah-putih-3722" data-origin="orderonline">
+                <div class="ooef-loader"><style>.ooef-loader{visibility: hidden;opacity: 0;position: absolute;left: 0;right: 0;top: 0;bottom: 0;display: flex;justify-content: center;align-items: center;flex-direction: column;animation: ooLoadingIn 10s ease;-webkit-animation: ooLoadingIn 10s ease;animation-fill-mode: forwards;overflow: hidden}@keyframes ooLoadingIn{0%{visibility: hidden;opacity: 0}20%{visibility: visible;opacity: 0}100%{visibility: visible;opacity: 1}}@-webkit-keyframes ooLoadingIn{0%{visibility: hidden;opacity: 0}20%{visibility: visible;opacity: 0}100%{visibility: visible;opacity: 1}}.ooef-loader>div,.ooef-loader>div:after{border-radius: 50%;width: 2.5rem;height: 2.5rem}.ooef-loader>div{font-size: 10px;position: relative;text-indent: -9999em;border: .25rem solid #f5f5f5;border-left: .25rem solid #55c4cf;-webkit-transform: translateZ(0);-ms-transform: translateZ(0);transform: translateZ(0);-webkit-animation: ooLoading 1.1s infinite linear;animation: ooLoading 1.1s infinite linear}.ooef-loader.error>div{border-left: .25rem solid #ff4500;animation-duration: 5s}@-webkit-keyframes ooLoading{0%{-webkit-transform: rotate(0);transform: rotate(0)}100%{-webkit-transform: rotate(360deg);transform: rotate(360deg)}}@keyframes ooLoading{0%{-webkit-transform: rotate(0);transform: rotate(0)}100%{-webkit-transform: rotate(360deg);transform: rotate(360deg)}}</style><div aria-live="polite" role="status"><div>Loading...</div></div></div>
+            </form>
+        </div>
+        <script>
+            if (typeof xLogError != 'function') {
+                var xLogError = function (error) {
+                    var req = new XMLHttpRequest();
+                    var payload = JSON.stringify({
+                        url: document.location.href,
+                        line: error.line,
+                        stack: error.stack
+                    });
+                    var params = 'message=' + encodeURIComponent(error.name) + '&payload=' + encodeURIComponent(payload) + '&type=embed&level=error';
+                    req.open('POST', 'https://api.orderonline.id/log', true);
+                    req.setRequestHeader('Content-type', 'application/x-www-form-urlencoded');
+                    req.send(params);
+                };
+            }
+            try {
+                if (typeof xEmbedScript != 'function') {
+                    var xEmbedScript = function () {
+                        !function(w, d, e, v, id, t, s) {
+                            if (d.getElementById(id)) return;
+                            t = d.createElement(e);t.async = !0;t.src = v;t.id = id;
+                            s = d.getElementsByTagName(e)[0];
+                            s.parentNode.insertBefore(t, s);
+                        }(window, document, 'script', 'https://cdn.orderonline.id/js/embed-v2-slim.min.js?v=8.0.4', 'oo-embed-js');
+                    };
+                }
+                if (typeof xEmbedInit != 'function') {
+                    var xEmbedInit = function (w, n) {
+                        if (w.ooe) return;
+                        n = w.ooe = function() {
+                            n.callMethod ? n.callMethod.apply(n, arguments) : n.queue.push(arguments)
+                        };
+                        if (!w._ooe) w._ooe = n;
+                        n.push = n;n.loaded = !0;n.version = '8.0.4';n.queue = [];
+                    };
+                }
+                xEmbedInit(window);
+                ooe('setup', 'redirect', 'https://nava.orderonline.id');
+                ooe('init', '5f119cd08dcbdb2737678706', '6865a0b5fa1312201a0d1033', null, 'oo-embed-form-one-set-merah-putih-3722', {"mode":"page","action":"Klik untuk pemesanan","title":"Form Pemesanan","triggerPixel":true,"triggerGtm":false});
+                if (!window.jQuery) {
+                    !function(w, d, e, v, id, t, s) {
+                        if (d.getElementById(id)) return;
+                        t = d.createElement(e);t.async = !0;t.src = v;t.id = id;
+                        t.addEventListener('load', xEmbedScript);
+                        s = d.getElementsByTagName(e)[0];
+                        s.parentNode.insertBefore(t, s);
+                    }(window, document, 'script', 'https://cdn.orderonline.id/js/vendor/jquery.min.js', 'oo-embed-jquery');
+                } else {
+                    xEmbedScript();
+                }
+            } catch (e) {
+                xLogError(e);
+                throw e;
+            }
+        </script>
+        <!-- End OrderOnline Embed Code -->
+    </div>
+
     <script>
-        // Image Gallery
-        function changeImage(src) {
-            document.getElementById('mainImage').src = src;
-            
-            // Update active thumbnail
-            document.querySelectorAll('.thumbnail').forEach(thumb => {
-                thumb.classList.remove('active');
+        // Tab Switching
+        const tabButtons = document.querySelectorAll('.tab-button');
+        const tabContents = document.querySelectorAll('.tab-content');
+        
+        tabButtons.forEach(button => {
+            button.addEventListener('click', () => {
+                const tabId = button.getAttribute('data-tab');
+                
+                // Remove active class from all buttons and contents
+                tabButtons.forEach(btn => btn.classList.remove('active'));
+                tabContents.forEach(content => content.classList.remove('active'));
+                
+                // Add active class to clicked button and corresponding content
+                button.classList.add('active');
+                document.getElementById(tabId).classList.add('active');
             });
-            event.target.classList.add('active');
-        }
-
-        // Dynamic Counters
-        function updateCounters() {
-            const viewers = document.getElementById('viewers');
-            const stock = document.getElementById('stock');
-            
-            // Simulate dynamic viewers (1000-1500)
-            const currentViewers = Math.floor(Math.random() * 500) + 1000;
-            viewers.textContent = currentViewers.toLocaleString();
-            
-            // Simulate decreasing stock (30-50)
-            const currentStock = Math.floor(Math.random() * 20) + 30;
-            stock.textContent = currentStock;
-        }
-
+        });
+        
+        // Image Gallery
+        const thumbnails = document.querySelectorAll('.thumbnail');
+        const mainImages = {
+            'tab1': document.getElementById('main-image-1'),
+            'tab2': document.getElementById('main-image-2')
+        };
+        
+        thumbnails.forEach(thumbnail => {
+            thumbnail.addEventListener('click', () => {
+                const mainImageSrc = thumbnail.getAttribute('data-main');
+                const activeTab = document.querySelector('.tab-content.active').id;
+                mainImages[activeTab].src = mainImageSrc;
+            });
+        });
+        
+        // Image Modal
+        const modal = document.getElementById('image-modal');
+        const modalImg = document.getElementById('modal-image');
+        const closeModal = document.querySelector('.close-modal');
+        
+        mainImages['tab1'].addEventListener('click', () => {
+            modal.style.display = 'flex';
+            modalImg.src = mainImages['tab1'].src;
+        });
+        
+        mainImages['tab2'].addEventListener('click', () => {
+            modal.style.display = 'flex';
+            modalImg.src = mainImages['tab2'].src;
+        });
+        
+        closeModal.addEventListener('click', () => {
+            modal.style.display = 'none';
+        });
+        
+        modal.addEventListener('click', (e) => {
+            if (e.target === modal) {
+                modal.style.display = 'none';
+            }
+        });
+        
         // Countdown Timer
         function updateCountdown() {
-            const now = new Date().getTime();
-            const tomorrow = new Date();
-            tomorrow.setDate(tomorrow.getDate() + 1);
-            tomorrow.setHours(0, 0, 0, 0);
-            const distance = tomorrow - now;
-
-            const hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-            const minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
-            const seconds = Math.floor((distance % (1000 * 60)) / 1000);
-
+            const now = new Date();
+            const endOfDay = new Date();
+            endOfDay.setHours(23, 59, 59, 0);
+            
+            const diff = endOfDay - now;
+            
+            const hours = Math.floor((diff % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+            const minutes = Math.floor((diff % (1000 * 60 * 60)) / (1000 * 60));
+            const seconds = Math.floor((diff % (1000 * 60)) / 1000);
+            
             document.getElementById('hours').textContent = hours.toString().padStart(2, '0');
             document.getElementById('minutes').textContent = minutes.toString().padStart(2, '0');
             document.getElementById('seconds').textContent = seconds.toString().padStart(2, '0');
         }
-
-        // Smooth Scrolling for anchor links
-        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-            anchor.addEventListener('click', function (e) {
-                e.preventDefault();
-                document.querySelector(this.getAttribute('href')).scrollIntoView({
-                    behavior: 'smooth'
-                });
-            });
-        });
-
-        // Initialize functions
-        updateCounters();
-        updateCountdown();
-
-        // Update every few seconds
-        setInterval(updateCounters, 8000);
+        
         setInterval(updateCountdown, 1000);
-
-        // Add scroll animations
-        const observerOptions = {
-            threshold: 0.1,
-            rootMargin: '0px 0px -50px 0px'
-        };
-
-        const observer = new IntersectionObserver((entries) => {
-            entries.forEach(entry => {
-                if (entry.isIntersecting) {
-                    entry.target.style.opacity = '1';
-                    entry.target.style.transform = 'translateY(0)';
+        updateCountdown();
+        
+        // Random View Counter
+        function updateViewCounter() {
+            const baseViews = 1254;
+            const randomIncrement = Math.floor(Math.random() * 10) + 1;
+            const totalViews = baseViews + randomIncrement;
+            document.getElementById('view-counter').textContent = totalViews.toLocaleString();
+            
+            // Update every 30 seconds
+            setTimeout(updateViewCounter, 30000);
+        }
+        
+        updateViewCounter();
+        
+        // Random Sold Counter
+        function updateSoldCounter() {
+            const baseSold = 869;
+            const randomIncrement = Math.floor(Math.random() * 3) + 1;
+            const totalSold = baseSold + randomIncrement;
+            document.getElementById('sold-counter').textContent = totalSold.toLocaleString();
+            
+            // Update every minute
+            setTimeout(updateSoldCounter, 60000);
+        }
+        
+        updateSoldCounter();
+        
+        // Buy Now Buttons
+        const buyNowButtons = document.querySelectorAll('.buy-now, .cta-button');
+        const orderFormContainer = document.getElementById('order-form-container');
+        
+        buyNowButtons.forEach(button => {
+            button.addEventListener('click', () => {
+                // Scroll to order form
+                orderFormContainer.style.display = 'block';
+                orderFormContainer.scrollIntoView({ behavior: 'smooth' });
+                
+                // Trigger form load
+                if (typeof ooe !== 'undefined') {
+                    ooe('show', '6865a0b5fa1312201a0d1033');
                 }
             });
-        }, observerOptions);
-
-        // Observe all sections for scroll animations
-        document.querySelectorAll('section').forEach(section => {
-            section.style.opacity = '0';
-            section.style.transform = 'translateY(20px)';
-            section.style.transition = 'opacity 0.6s ease, transform 0.6s ease';
-            observer.observe(section);
         });
-
-        // Add some interactive elements
-        document.querySelectorAll('.stat-item, .testimonial, .step').forEach(item => {
-            item.addEventListener('mouseenter', function() {
-                this.style.transform = 'translateY(-5px) scale(1.02)';
-            });
-            
-            item.addEventListener('mouseleave', function() {
-                this.style.transform = 'translateY(0) scale(1)';
+        
+        // Color Variant Selection
+        const colorOptions = document.querySelectorAll('.variant-option');
+        
+        colorOptions.forEach(option => {
+            option.addEventListener('click', () => {
+                // Remove selected class from all options in this group
+                const parentOptions = option.parentElement.querySelectorAll('.variant-option');
+                parentOptions.forEach(opt => opt.classList.remove('selected'));
+                
+                // Add selected class to clicked option
+                option.classList.add('selected');
             });
         });
     </script>
